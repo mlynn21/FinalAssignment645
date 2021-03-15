@@ -1,4 +1,4 @@
-/* Create at least 3 Sass mixins for all the generic boxes including logo, navigation menu, header, content areas, and footer. Your mixins should also contain default parameters for the properties that you are setting within the mixin. */
+// Create at least 3 Sass mixins for all the generic boxes including logo, navigation menu, header, content areas, and footer. Your mixins should also contain default parameters for the properties that you are setting within the mixin.
 
 @mixin logo($image, $height:100px) {
     background: url($image) 0 50px;
@@ -47,7 +47,7 @@
     padding-top:50px;
 }
 
-/* Use a math operation somewhere in your code. */
+// Use a math operation somewhere in your code. //
 
 @mixin contentGrid($qty, $margin) {
 width: ((100% - (($qty - 1) * $margin)) / $qty);
@@ -61,7 +61,7 @@ width: ((100% - (($qty - 1) * $margin)) / $qty);
     }
 }
 
-/* Create a mixin similar to the break() mixin that we built in the video exercises. This mixin should handle the media queries for the web page. */
+// Create a mixin similar to the break() mixin that we built in the video exercises. This mixin should handle the media queries for the web page. //
 
 @mixin break($length) {
     @media (max-width: $length) {
