@@ -1,0 +1,72 @@
+/* Create at least 3 Sass mixins for all the generic boxes including logo, navigation menu, header, content areas, and footer. Your mixins should also contain default parameters for the properties that you are setting within the mixin. */
+
+@mixin logo($image, $height:100px) {
+    background: url($image) 0 50px;
+    height: $height;
+    width:400px;
+    display:block;
+    background-repeat: no-repeat;
+    float:left;
+    display:block;
+    margin:0;
+}
+
+@mixin navMenu($height:100px) {
+    width:540px;
+    height:$height;
+    float:left;
+    text-align:right;
+}
+
+@mixin header() {
+    width:inherit;
+    clear:both;
+    text-align:center;
+    padding-top:40px;
+}
+
+@mixin headline($height:100px, $headlineColor:grey) {
+    width:100%;
+    height: $height;
+    background: $headlineColor;
+    text-align:center;
+    margin:0 auto;
+}
+
+@mixin contentArea($width:1280px) {
+    width:$width;
+    margin:20px auto;
+}
+
+@mixin footer($height, $footerColor: grey, $textColor:white) {
+    width:100%;
+    height:120px;
+    background:$footerColor;
+    text-align:center;
+    color:$textColor;
+    padding-top:50px;
+}
+
+/* Use a math operation somewhere in your code. */
+
+@mixin contentGrid($qty, $margin) {
+width: ((100% - (($qty - 1) * $margin)) / $qty);
+&:nth-child(n) {
+    margin-bottom: $margin; 
+    margin-right: $margin;
+    }
+&:nth-child(#{$qty}n) {
+    margin-bottom: $margin;
+    margin-right: $margin;
+    }
+}
+
+/* Create a mixin similar to the break() mixin that we built in the video exercises. This mixin should handle the media queries for the web page. */
+
+@mixin break($length) {
+    @media (max-width: $length) {
+        @content
+    }   
+}
+
+
