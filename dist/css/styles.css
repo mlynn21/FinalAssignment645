@@ -1,6 +1,3 @@
-/* Create at least 3 Sass mixins for all the generic boxes including logo, navigation menu, header, content areas, and footer. Your mixins should also contain default parameters for the properties that you are setting within the mixin. */
-/* Use a math operation somewhere in your code. */
-/* Create a mixin similar to the break() mixin that we built in the video exercises. This mixin should handle the media queries for the web page. */
 @import url("http://fonts.googleapis.com/css?family=Roboto:400,900,100");
 figure {
   background: url("../images/logo.png") 0 50px;
@@ -31,9 +28,7 @@ nav {
   nav a:hover {
     color: #FFF; }
 
-/* Create at least 3 Sass mixins for all the generic boxes including logo, navigation menu, header, content areas, and footer. Your mixins should also contain default parameters for the properties that you are setting within the mixin. */
-/* Use a math operation somewhere in your code. */
-/* Create a mixin similar to the break() mixin that we built in the video exercises. This mixin should handle the media queries for the web page. */
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
